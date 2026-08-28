@@ -1,0 +1,24 @@
+name: Print World
+
+
+on:
+    push:
+     branches:
+         - main
+         
+         jobs:
+         job1:
+         runs-on: ubuntu-late
+
+         steps:
+         - name: print Hello World
+         run : echo "Hello World From Git Hub Actions"
+
+
+jobs:
+job2:
+runs-on: ubuntu-late
+
+steps:
+-name: welcome msg
+run: echo "Good Morning GitHubActions"
